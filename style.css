@@ -37,6 +37,12 @@ h2{
     grid-template-columns: 50% 50%;
     width: 100%;
 }
+
+.header::after{
+    content: "";
+    border-bottom: solid rgba(128, 128, 128, 0.397) 1px;
+    width: 1900px;   
+}
 .description1{
     margin: 100px;   
 }
@@ -52,6 +58,11 @@ img{
     width: 100%;
     
 }
+.middle-page-up::after{
+    content: "";
+    border-bottom: solid rgba(128, 128, 128, 0.397) 1px;
+    width: 1900px;   
+}
 .description2 {
     margin: 100px;
 }
@@ -60,15 +71,24 @@ img{
     display: grid;
     grid-template-columns: 68% 32%;
 }
+
+.middle-page-down::after{
+    content: "";
+    border-bottom: solid rgba(128, 128, 128, 0.397) 1px;
+    width: 1900px;  
+}
 .middle-page-down img {
+    height: 550px;
     object-fit: cover;
-    height: 500px;
+    
 }
 .description3 {
     margin: 100px;
 }
 
 .formulair {
+    width: 60%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -79,7 +99,9 @@ img{
     "b b b b";
 }
 
-.formulair #title-form{
+ #title-form{
+    margin-top: 50px;
+    margin-bottom: 30px;
     grid-area: t;
     text-align: center;
 }
@@ -91,12 +113,15 @@ img{
 #email{
     grid-area: e;
     text-align: center;
+    padding: 20px;
+    font-weight: 700;
 }
 
 #msg {
-    grid-area: m
-    ;
-    text-align: center;
+    grid-area: m;
+   text-align: center;
+    width: 100%;
+    font-weight: 700;
 }
 
 #send{
@@ -104,4 +129,23 @@ img{
     text-align: center;
     margin: 0 auto;
     width: 20%;
+    padding: 0;
+    height: 50px;
+}
+
+#name {
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+input{
+     width: 100%;
+  padding: 22px 20px;
+  margin: 8px auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
 }
