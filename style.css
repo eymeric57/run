@@ -149,3 +149,42 @@ input{
   box-sizing: border-box;
  
 }
+
+.formulair::after{
+    content: "";
+    border-bottom: solid rgba(128, 128, 128, 0.397) 1px;
+    width: 400%;  
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    margin-top: 20px;
+    list-style: none;
+    font-size: 20px;
+    border: solid 1px;
+    border-radius: 100px;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    color: rgb(173, 173, 171);
+}
+
+i{
+    color: black;
+}
+
+.contact::before{
+
+    content: "";
+    border-top: solid rgba(214, 37, 37, 0.397) 10px;
+    width: 1900px;
+}
