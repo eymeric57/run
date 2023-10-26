@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -6,6 +7,7 @@
     font-style: normal;
     font-weight: 100;
     font-family: quicksand;
+
 
 }
 
@@ -27,21 +29,24 @@ p {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-style: normal;
+    font-family: source code pro;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 400;
     text-transform: uppercase;
+    font-family: source code pro;
 }
 
 h3 {
 
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 400;
     text-transform: uppercase;
+    font-family: source code pro;
 }
 
 .band {
@@ -99,16 +104,21 @@ img {
 }
 
 .formulair {
-    width: 60%;
+    width: 50%;
+    height: 100vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
     grid-template-areas:
         "t t t t"
         "n n e e"
         "m m m m"
-        "b b b b";
+        "b b b b"
+        ;
+
+        border-bottom: solid rgba(128, 128, 128, 0.397) 1px;
+
 }
 
 #title-form {
@@ -121,35 +131,44 @@ img {
 .formulair #name {
     grid-area: n;
     text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 #email {
     grid-area: e;
     text-align: center;
-    padding: 20px;
-    font-weight: 700;
+    padding: 20px 10px;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 #msg {
     grid-area: m;
     text-align: center;
     width: 100%;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 #send {
-    grid-area: b;
+   
     text-align: center;
-    margin: 0 auto;
-    width: 20%;
-    padding: 0;
-    height: 50px;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin: 50px auto 100px;
+display: block;
+
+    
 }
+  
 
 #name {
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
     font-weight: 700;
+
 }
 
 input {
@@ -160,14 +179,16 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
-.formulair::after {
-    content: "";
-    border-bottom: solid rgba(128, 128, 128, 0.397) 1px;
-    width: 400%;
+#btn-msg {
+    padding: 100px 20px;
+
 }
+
 
 ul {
     display: flex;
@@ -182,23 +203,109 @@ li {
     list-style: none;
     font-size: 20px;
     border: solid 1px;
-    border-radius: 100px;
-    padding: 10px;
-    height: 20px;
-    width: 20px;
+    border-radius: 1000px;
     text-align: center;
     align-items: center;
     margin-bottom: 50px;
     color: rgb(173, 173, 171);
+    
 }
 
 i {
     color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+    
+    
 }
+
+.fa-facebook-f {
+    padding: 10px 15px;
+    
+}
+
 
 .contact::before {
 
     content: "";
     border-top: solid rgba(214, 37, 37, 0.397) 10px;
     width: 1900px;
+    height: 20px;
+}
+
+
+
+/* ....................................responsiv..................................*/
+
+@media screen and (max-width:1000px){
+
+    .header{
+        display: block;
+        border-bottom: none ;
+    
+    }
+    .description1{
+        margin: 20px;
+
+    }
+    .description1 p {
+        font-size: 1.5rem;
+    }
+
+    img {
+        margin-top: 50px;
+    }
+    
+    .middle-page-up {
+        display: block;
+    }
+    .description2 {
+        margin: 20px;
+        margin-bottom: 60px;
+    }
+    .description2 p {
+        font-size: 1.5rem;
+    }
+
+    .middle-page-up img {
+        display: none;
+    }
+    .description3{
+        margin: 20px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .middle-page-down  {
+        display: block;
+    }
+
+    .middle-page-down img {
+        display: none;
+    }
+
+.formulair {
+    width: 90%;
+
+}
+#title-form{
+    font-size: 3rem;
+}
+    
+    input {
+
+    padding: 10px 0px;
+    width: 100%;
+}
+    #btn-msg {
+        padding: 62px 20px;
+
+    }
+}
+
+@media screen and (max-width:800px){
+
+ .contact ul {
+    width: 70%;
+ }
 }
