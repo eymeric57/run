@@ -54,14 +54,11 @@ h3 {
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
-}
-
-
-.header::after {
-    content: "";
     border-bottom: solid rgba(128, 128, 128, 0.397) 1px;
-    width: 1900px;
 }
+
+
+
 
 .description1 {
     margin: 100px;
@@ -77,13 +74,8 @@ img {
     display: grid;
     grid-template-columns: 42% 58%;
     width: 100%;
-
-}
-
-.middle-page-up::after {
-    content: "";
     border-bottom: solid rgba(128, 128, 128, 0.397) 1px;
-    width: 1900px;
+
 }
 
 .description2 {
@@ -93,16 +85,11 @@ img {
 .middle-page-down {
     display: grid;
     grid-template-columns: 68% 32%;
-}
-
-.middle-page-down::after {
-    content: "";
     border-bottom: solid rgba(128, 128, 128, 0.397) 1px;
-    width: 1900px;
 }
 
 .middle-page-down img {
-    height: 550px;
+    height: 600px;
     object-fit: cover;
 
 }
